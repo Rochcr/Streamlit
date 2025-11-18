@@ -1,6 +1,7 @@
+import streamlit as st
 from google import genai
 from google.genai import types
-import streamlit as st
+
 
 
 def get_gemini_client():
@@ -43,3 +44,4 @@ def generar_respuesta(
             return "El modelo no devolvió texto en su respuesta."
     except Exception as e:
         return f"Error extrayendo texto: {e}"
+
